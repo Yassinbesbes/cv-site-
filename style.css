@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "Heebo-Regular", Helvetica;
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.nav > .nav-header {
+    display: inline;
+}
+
+.nav > .nav-btn {
+    display: none;
+}
+
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav > .nav-links > a:hover {
+    background-color: #EDF7FA;
+}
+
+.nav > #nav-check {
+    display: none;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    margin-top:50px;
+}
+
+.flex-item-left {
+    padding: 10px;
+    flex: 50%;
+}
+
+/* title style h1 and p tag  */
+h1{margin-bottom: 10px;}
+p{font-size: 16px;}
+
+ /* button style  */
+button{
+    color:white;
+    background-color: #FF6464;
+    border:none;
+    padding: 15px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+/* partie two */
+.flex-item-right {
+    padding: 10px;
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    border-radius: 100%; 
+    overflow: hidden; 
+    background-color: #d1f1fb;
+}
+
+/*Expérience professionnelle parte */
+.all{
+    background-color: #d6f2fbc3;
+    width: auto;
+    margin-top: 80px;
+    padding-bottom: 50px;
+}
+.all > p{
+    padding-top: 25px;
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
+.rectangle-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+  
+.rectangle {
+    width: calc(26.33% - 20px);    
+    height: 325px; /* Adjust height as needed */
+    background-color: #ffffff; /* Adjust background color as needed */
+    border: none; /* Adjust border as needed */
+    padding: 20px;
+}
+.left,.right{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Date span {
+    margin-right: 20px; /* Add margin to the right of the date */
+}
+.Date .location {
+    margin-left: 20px; /* Add margin to the left of the location */
+}
+.Description{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .nav > .nav-btn > label:hover, .nav #nav-check:checked ~ .nav-btn > label {
+        background-color: rgba(181, 181, 181, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #000000;
+    }
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #EDF7FA;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+    .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+    .flex-container {
+        text-align: center;
+    }
+    
+    p{
+        font-size: 25px;
+    }
+    .circle {
+        border-radius: 100%; 
+        overflow: hidden; 
+        width: 140px; 
+        height: 140px; 
+        background-color: #d1f1fb;
+    }
+    
+    .circle img {
+        width: 100%; /* Ensures the image fills the container */
+        height: auto; /* Maintains aspect ratio */
+    }
+
+    .rectangle-container {
+        flex-direction: column; /* Stack rectangles vertically */
+        width: 300px;
+    }
+    .rectangle {
+        width: auto; /* Make rectangles full width on smaller screens */
+        margin-bottom: 10px; /* Adjust margin as needed for smaller screens */
+    }
+    .all > p{
+        text-align: center;
+        font-size: 20px;
+    }
+    .Date{
+        font-size: 15px;
+    }
+    .Date span {
+        margin-right: 10px; /* Add margin to the right of the date */
+    }
+    .Date .location {
+        margin-left: 10px; /* Add margin to the left of the location */
+    }
+    .Description{
+        margin-top: 15px;
+    }
+
+
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .Description{
+        margin-right: 0px;
+    }
+.rectangle{
+    height: auto;
+}
+}
+
+@media screen and (min-width: 900px) {
+        .flex-item-left {
+        margin-left: 140px !important;
+    }
+    .rectangle{
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
