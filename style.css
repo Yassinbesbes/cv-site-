@@ -203,10 +203,12 @@ button{
     .rectangle-container {
         flex-direction: column; /* Stack rectangles vertically */
         width: 300px;
+        margin: auto;
     }
     .rectangle {
         width: auto; /* Make rectangles full width on smaller screens */
         margin-bottom: 10px; /* Adjust margin as needed for smaller screens */
+        
     }
     .all > p{
         text-align: center;
@@ -223,6 +225,7 @@ button{
     }
     .Description{
         margin-top: 15px;
+  
     }
 
 
