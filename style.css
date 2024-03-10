@@ -145,7 +145,6 @@ button{
     width: 100%;
     max-width: 350px;
     height: 200px; /* Adjust the height as needed */
-    object-fit: cover; /* Maintain aspect ratio */
     border-radius: 10px; /* Match rectangle border radius */
     border: #000000 solid 0.5px;
 }
@@ -205,22 +204,22 @@ footer {
 }
 .button-left,
 .button-right {
-  position: absolute;
-  top: 30%;
-  transform: translateY(-50%);
-  z-index: 1;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    z-index: 1;
 }
 
 .button-left {
-  left: 0;
+    left: 0;
 }
 
 .button-right {
-  right: 0;
+    right: 0;
 }
 
 .featured {
-  position: relative;
+    position: relative;
 }
 
 
@@ -303,6 +302,8 @@ footer {
     .rectangle {
         width: auto; /* Make rectangles full width on smaller screens */
         margin-left: 0px;
+        margin-right: 0px !important;
+
     }
     .all > p{
         text-align: center;
@@ -337,6 +338,11 @@ footer {
     .button-left,.button-right{
         display: none;
     }
+    .rectangle img {
+
+        height: 170px; /* Adjust the height as needed */
+
+    }
 
 
 }
@@ -349,7 +355,7 @@ footer {
     .Description{
         margin-right: 0px;
     }
-    .rectangle{
+    .rectangle {
         height: auto;
         margin-right: 25px !important;
     }
