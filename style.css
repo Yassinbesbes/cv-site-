@@ -147,6 +147,7 @@ button{
     height: 200px; /* Adjust the height as needed */
     object-fit: cover; /* Maintain aspect ratio */
     border-radius: 10px; /* Match rectangle border radius */
+    border: #000000 solid 0.5px;
 }
   
 .rectangle .content {
@@ -175,7 +176,6 @@ button{
 }
 
 /* footer */
-/* footer */
 footer {
     background-color: #ffffff;
     padding: 20px;
@@ -202,6 +202,25 @@ footer {
 .plus{
     color:#c3c3c3;
     cursor: pointer;
+}
+.button-left,
+.button-right {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.button-left {
+  left: 0;
+}
+
+.button-right {
+  right: 0;
+}
+
+.featured {
+  position: relative;
 }
 
 
@@ -313,6 +332,10 @@ footer {
         padding-left: 0px;
 
     
+    }
+
+    .button-left,.button-right{
+        display: none;
     }
 
 
