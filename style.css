@@ -154,7 +154,7 @@ button{
 
 .featured .row {
     width: 100%;
-    margin-bottom: 50px; /* Add margin bottom to create space between rows */
+    margin-bottom: 40px; /* Add margin bottom to create space between rows */
 }
 
 
@@ -168,6 +168,7 @@ button{
     height: auto; /* Maintain aspect ratio */
     border-radius: 15px;
     margin-bottom: 10px;
+    border: #bababa solid 0.5px;
 }
 
 .featured .col h4, .featured .col p {
@@ -360,6 +361,13 @@ footer {
         border-radius: 30px;
         width: 250px  ;
       }
+      .featured .row {
+        width: 100%;
+        margin-bottom: none; /* Add margin bottom to create space between rows */
+    }
+    .horizontal-line{
+        display: none;
+    }
 }
 
 @media (max-width: 900px) {
