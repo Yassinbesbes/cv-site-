@@ -274,13 +274,18 @@ footer {
         position: absolute;
         display: block;
         width: 100%;
-        background-color: #EDF7FA;
-        height: 0px;
-        transition: all 0.3s ease-in;
+        height: 0; /* Start with 0 height */
         overflow-y: hidden;
         top: 50px;
         left: 0px;
+        background-color: transparent; /* Set initial background color as transparent */
+        transition: height 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transitions for height and background color */
     }
+    
+    .nav > #nav-check:checked ~ .nav-links {
+        background-color: #ffffff; /* Change background color when checked */
+    }
+    
     .nav > .nav-links > a {
         display: block;
         width: 100%;
