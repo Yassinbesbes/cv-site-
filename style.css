@@ -1,412 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-.nav {
-    height: 50px;
-    width: 100%;
-    position: relative;
-}
-
-.nav > .nav-header {display: inline;}
-.nav > .nav-btn {display: none;}
-
-.nav > .nav-links {
-    display: inline;
-    float: right !important; /* Change float to left */
-    font-size: 18px;
-    margin-right: 50px;
-    margin-top: 10px;
-}
-
-.nav > .nav-links > a {
-    display: inline-block;
-    padding: 13px 10px 13px 10px;
-    text-decoration: none;
-    color: #000000;
-}
-
-.nav > #nav-check {display: none;}
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    font-size: 30px;
-    margin-top:50px;
-}
-
-.flex-item-left {
-    padding: 10px;
-    flex: 50%;
-}
-
-/* title style h1 and p tag  */
-h1{margin-bottom: 10px;}
-p{font-size: 16px;}
-
- /* button style  */
-button{
-    color:white;
-    background-color: #FF6464;
-    border:none;
-    padding: 15px;
-    font-weight: 600;
-    margin-top: 12px;
-    cursor: pointer;
-    font-size: 15px !important;
-}
-
-/* partie two */
-.flex-item-right {
-    padding: 10px;
-    flex: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.circle {
-    border-radius: 100%; 
-    overflow: hidden; 
-    background-color: #d1f1fb;
-}
-
-/*Expérience professionnelle parte */
-:root {
-    --stripes: repeating-linear-gradient(
-        100deg,
-        rgba(255, 255, 255, 0.5) 0%, /* Adjusted color stop with opacity */
-        rgba(255, 255, 255, 0.5) 7%, /* Adjusted color stop with opacity */
-        transparent 10%,
-        transparent 12%,
-        rgba(255, 255, 255, 0.5) 16% /* Adjusted color stop with opacity */
-    );
-    
-    --stripesDark: repeating-linear-gradient(
-        100deg,
-        rgba(0, 0, 0, 0.5) 0%,
-        rgba(0, 0, 0, 0.5) 7%,
-        transparent 10%,
-        transparent 12%,
-        rgba(255, 255, 255, 0.5) 16%
-    );
-    --rainbow: repeating-linear-gradient(
-        100deg,
-        rgba(212, 228, 248, 0.5) 10%,
-        rgba(241, 208, 246, 0.5) 15%,
-        rgba(185, 213, 247, 0.5) 20%,
-        rgba(194, 236, 229, 0.5) 25%,
-        rgba(186, 217, 254, 0.5) 30%
-    );
-}
-
-
-@keyframes jumbo {
-    from {
-        background-position: 50% 50%, 50% 50%;
-    }
-    to {
-        background-position: 350% 50%, 350% 50%;
-    }
-}
-
-.all{
-    background-color: #ffffff2b;
-    overflow: hidden;
-    width: auto;
-    margin-top: 80px;
-    padding-bottom: 50px;
-}
-
-.all > p{
-    padding-top: 25px;
-    padding-left: 25px;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-
-.rectangle-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-  
-.rectangle {
-    height: 325px; /* Adjust height as needed */
-    background-color: #ffffff; /* Adjust background color as needed */
-    border: 1px solid rgb(219, 219, 219); /* Adjust border as needed */
-    padding: 20px;
-    border-radius: 10px;
-    margin-right: 25px !important;
-    box-shadow:0px 4px 5px #00000040;
-
-
-}
-
-.left,.right{
-    display: flex;
-    justify-content: space-between;
-}
-
-.Description{font-size: 15px;}
-
-.all::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    background-image: var(--stripes), var(--rainbow);
-    background-size: 300%, 200%;
-    background-position: 50% 50%, 50% 50%;
-    filter: blur(10px) invert(100%);
-    animation: jumbo 70s linear infinite;
-    mix-blend-mode: difference;
-    pointer-events: none;
-    z-index:-1;
-}
-
-
-/* Featured works */
-.featured > p {
-    padding-top: 25px;
-    padding-left: 25px;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-
-.featured .container {
+.center-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100vh; /* Make the container full height for vertical centering */
 }
 
-.featured .row {
-    width: 100%;
-    margin-bottom: 40px; /* Add margin bottom to create space between rows */
+.center-text span {
+    margin: 5px 0; /* Adjust the vertical spacing as needed */
+    font-weight: 500;
+    font-size: 100px;
+    opacity: 0.5; /* Set transparency */
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Prevent text from wrapping */
+    border-right: 2px solid; /* Simulate cursor */
+    animation: typing 3s steps(20, end), blink-caret 0.5s step-end infinite;
 }
 
-.row{border-bottom: 1px solid rgb(146, 146, 146);}
-.featured .col {text-align: center;}
-
-.featured .col img {
-    width: auto; /* Ensure the image fills the container */
-    max-width: 300px; /* Limit the maximum width of the image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 15px;
-    margin-bottom: 10px;
-    border: #bababa solid 0.5px;
+/* Define the typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
 }
 
-.featured .col h4, .featured .col p {
-    margin: 0;
-    font-size: 16px;
-}
-.year{
-    background-color: #142850;
-    color: white;
-    padding: 8px;
-    border-radius: 25px;
-    font-size: 12px;
+/* Define the cursor blink animation */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
 }
 
-/* footer */
-footer {
-    background-color: #ffffff;
-    padding: 20px;
-    text-align: center;
+.center-text span:nth-child(1) {
+    color: #FF0000; /* Red */
+    animation-delay: 0s; /* Delay for typing animation */
 }
 
-.social-icons {margin-bottom: 10px;}
-.social-icons a {margin: 0 10px;}
-
-.social-icons img {
-    width: 40px; /* Set width to your desired size */
-    height: 40px; /* Set height to your desired size */
+.center-text span:nth-child(2) {
+    color: #00FF00; /* Green */
+    animation-delay: 3s; /* Adjust delay based on previous span duration */
 }
 
-.copy {
-    font-size: 14px;
-    color: #000000;
+.center-text span:nth-child(3) {
+    color: #0000FF; /* Blue */
+    animation-delay: 6s; /* Adjust delay based on previous span duration */
 }
 
-.plus{
-    color:#c3c3c3;
-    cursor: pointer;
-}
-.plus:hover{
-    color: #142850;
+.center-text span:nth-child(4) {
+    color: #FFFF00; /* Yellow */
+    animation-delay: 9s; /* Adjust delay based on previous span duration */
 }
 
-.button-left,.button-right {
-    position: absolute;
-    top: 30%;
-    transform: translateY(-50%);
-    z-index: 1;
-}
-
-.button-left {left: 0;}
-.button-right {right: 0;}
-
-
-
-/*responsive */
-@media (max-width:600px) {
-    .nav > .nav-btn {
-        display: inline-block;
-        position: absolute;
-        right: 0px;
-        top: 0px;
-    }
-    .nav > .nav-btn > label {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        padding: 13px;
-    }
-    .nav > .nav-btn > label:hover, .nav #nav-check:checked ~ .nav-btn > label {
-        background-color: rgba(181, 181, 181, 0.3);
-    }
-    .nav > .nav-btn > label > span {
-        display: block;
-        width: 25px;
-        height: 10px;
-        border-top: 2px solid #000000;
-    }
-    .nav > .nav-links {
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 0; /* Start with 0 height */
-        overflow-y: hidden;
-        top: 50px;
-        left: 0px;
-        background-color: transparent; /* Set initial background color as transparent */
-        transition: height 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transitions for height and background color */
-    }
-    
-    .nav > #nav-check:checked ~ .nav-links {
-        background-color: #ffffff; /* Change background color when checked */
-    }
-    
-    .nav > .nav-links > a {
-        display: block;
-        width: 100%;
-    }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-        height: 0px;
-    }
-    .nav > #nav-check:checked ~ .nav-links {
-        height: calc(100vh - 50px);
-        overflow-y: auto;
-    }
-    .flex-container {text-align: center;}
-    
-    p{font-size: 15px;}
-
-    .circle {
-        border-radius: 100%; 
-        overflow: hidden; 
-        width: 140px; 
-        height: 140px; 
-        background-color: #d1f1fb;
-    }
-    
-    .circle img {
-        width: 100%; /* Ensures the image fills the container */
-        height: auto; /* Maintains aspect ratio */
-    }
-
-    .rectangle-container {
-        flex-direction: column; /* Stack rectangles vertically */
-        width: 300px;
-        margin: auto;
-    }
-
-    .rectangle {
-        width: auto; /* Make rectangles full width on smaller screens */
-        margin-left: 0px;
-        margin-right: 0px !important;
-
-    }
-
-    .all > p{
-        text-align: center;
-        font-size: 20px;
-        padding-left: 0;
-    }
-
-    .Date{
-        font-size: 15px;
-    }
-
-    .Date span {margin-right: 10px; /* Add margin to the right of the date */}
-    .Date .location {margin-left: 10px; /* Add margin to the left of the location */}
-    .Description{margin-top: 15px;}
-
-    /* Featured */
-    .featured > p{
-        padding-top: 25px;
-        margin-bottom:25px;
-        text-align: center;
-        font-size: 20px;
-        padding-left: 0px;
-    }
-  
-    .button-left,.button-right{display: none;}
-    .rectangle{margin-bottom: 25px;}
-    .rectangle img {height: 170px; /* Adjust the height as needed */}
-    
-    .container{
-        display: flex;
-        justify-content: center;
-    }
-
-    .featured .row {
-        width: 100%;
-        margin-bottom: none; /* Add margin bottom to create space between rows */
-    }
-}
-
-
-@media (max-width: 900px) {
-    .flex-container {
-        flex-direction: column;
-    }
-    .Description{
-        margin-right: 0px;
-    }
-    .rectangle {
-        height: auto;
-    }
-}
-
-
-
-
-@media only screen and (min-width: 992px) {
-    .flex-item-left {
-        margin-left: 140px !important;
-    }
-    .rectangle{
-        height: auto;
-        margin-left: 25px;
-    }  
-}
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .all,.featured{
-        margin-bottom:25px;
-    }
-    .Date span {
-        margin-right: 20px; 
-    }
-    .Date .location {
-        margin-left: 20px; /* Add margin to the left of the location */
-    }
-    .rectangle img {
-        width: 90%;
-    }
-
+.center-text span:nth-child(5) {
+    color: #FF00FF; /* Magenta */
+    animation-delay: 12s; /* Adjust delay based on previous span duration */
+    animation-duration: 3s; /* Set duration to match typing animation */
 }
