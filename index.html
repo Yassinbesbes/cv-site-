@@ -1,163 +1,289 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <title>Bootstrap Example</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
-
-<<<<<<< HEAD
-    <!-- Example Code -->
-=======
-<!--Main-->
-<main>
-    <div class="flex-container">
-        <div class="flex-item-left">
-            <h1>Hi, I'am Yassin<br>Software developer</h1>
-            <p>Passionate about web development, and creating  user-friendly websites and applications.  Eager to embark on a  fulfilling career journey post-graduation, driven by a commitment to  innovation and continuous learning.</p>
-            <button> Download Resume</button>
-        </div>
-        <div class="flex-item-right">
-            <div class="circle" ><img src="images/new.png" alt="CvPhoto" ></div>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cv</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="images/icone/Home.svg" alt="Bootstrap" width="35" height="30">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"> Blog<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Side Project</a>
+        </li>
+      </ul>
     </div>
-
-    <div class="relative flex flex-col h-[100vh] bg-white dtransition-bg">
-      <div class="absolute inset-0 overflow-hidden jumbo"></div>
-  </div>
-
-  <div class="all">
-      <p>Expérience professionnelle :</p>
-      <div class="rectangle-container">
-          <div class="rectangle">
-              <div>
-                  <h3>Video editing</h3>
-                  <p class="Date"><span>10 jan 2020</span> | <span class="location">Tunisie</span></p>
-                  <p class="Description">Skilled in video editing and montage techniques, adept at weaving together footage, audio, and effects to create engaging visual narratives. Proficient in using industry-standard editing software to produce polished and professional videos.</p>
-              </div>
-          </div>
-          <div class="rectangle">
-            <div>
-              <h3>Animations 2D/3D</h3>
-              <p class="Date"><span>12 Mar 2022</span> | <span class="location">Tunisie</span></p>
-              <p class="Description">Proficient in creating captivating animations, both 2D and 3D, to bring concepts to life. Experienced in utilizing various tools and techniques to produce visually stunning and engaging.</p>
-            </div>
-          </div>
-          <div class="rectangle">
-            <div>
-                  <h3>UX / UI Designe</h3>
-                  <p class="Date"><span>7 Feb 2023</span> | <span class="location">Tunisie</span></p>
-                  <p class="Description">Experienced in designing visually appealing that prioritize user experience and functionality. Proficient in utilizing design principles and industry-standard tools to create intuitive and aesthetically pleasing interfaces.</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</main>
+  </nav>
+</header>
   
 
-<!--featured parte-->
-<div class="featured">
-    <p>Featured works :</p>
-    <div class="container">
-      <div class="row">
-        <!-- First project -->
-        <div class="col">
-          <a href="https://github.com/Yassinbesbes/project-tt"><img class="image"  src="images/One.png" alt="project-Tt"></a>
-        </div>
-        <div class="col-12 col-xxl-9">
-          <h4>Tt Speed Connection</h4>
-          <p class="date-location"><span class="year">2024</span> <span class="plus">Mahdia</span></p>
-          <p class="description">Un service en ligne permettant aux utilisateurs d'évaluer la qualité de leur connexion Internet. L'objectif principal est de fournir une interface conviviale pour mesurer le débit de connexion et offrir des solutions d'amélioration en fonction<span id="moreText1" style="display: none;"> Cette réalisation démontre ma maîtrise du développement web, de l'optimisation de l'expérience utilisateur et de la conception d'interfaces intuitives.</span><a onclick="showMore('moreText1', 'seeMoreBtn1')" class="plus" id="seeMoreBtn1"> See More ...</a></p>
-        </div>
-      </div>
-  
-      <!-- Second project -->
-      <div class="row">
-        <div class="col">
-          <a href="https://yassinbesbes.github.io/handmade_projectSite/"><img class="image" src="images/two.png" alt="HandMade-project"></a>
-        </div>
-        <div class="col-12 col-xxl-9">
-          <h4>E-commerce Website</h4>
-          <p class="date-location"><span class="year">2024</span> <span class="plus">Sfax</span></p>
-          <p class="description">A React-powered online marketplace showcasing unique, handcrafted treasures. Discover artisanal creations crafted with passion and care. Explore our curated collection and experience the beauty of handmade<span id="moreText2" style="display: none;"> This project underscores my proficiency in frontend development, user interface design, and delivering high-quality digital solutions.</span><a onclick="showMore('moreText2', 'seeMoreBtn2')" class="plus" id="seeMoreBtn2"> See More...</a></p>
-        </div>
-      </div>
-      
-      <!-- Third project -->
-      <div class="row">
-        <div class="col">
-          <a href="https://yassinbesbes.github.io/fruitVegSite/"><img class="image" src="images/three.png" alt="FruitVeg-Project"></a>
-        </div>
-        <div class="col-12 col-xxl-9">
-          <h4>e-commerce Website</h4>
-          <p class="date-location"><span class="year">2022</span> <span class="plus">Mahdia</span></p>
-          <p class="description">Explore everything about fruits and vegetables. Whether you're a seasoned chef searching for new recipes, a health-conscious individual seeking nutritional information, or a gardening enthusiast eager to grow your own produce<span id="moreText3" style="display: none;"> This project showcases my expertise in content curation, culinary knowledge, and promoting healthy lifestyles.</span><a onclick="showMore('moreText3', 'seeMoreBtn3')" class="plus" id="seeMoreBtn3"> See More ...</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-
-</main>
-
-
-<!-- Footer parte -->
-<footer class="footer" >
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/in/yassinbesbes/"><img src="images/linkedin.png" alt="LinkedIn"></a>
-    <a href="https://twitter.com/Yassin__Besbes"><img src="images/twitter.png" alt="Twitter"></a>
-    <a href="https://www.figma.com/@yassin_besbes"><img src="images/figma(1).png" alt="Figma"></a>
-    <a href="https://github.com/Yassinbesbes"><img src="images/github.png" alt="GitHub"></a>
-  </div>
-  <p class="copy">&copy; 2024 All rights reserved</p>
-</footer>
->>>>>>> c256eff773d063cb4119e448762f0586654bca2e
-    
-        
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="images/icone/Home.png" alt="Home" width="30" height="30" class="d-inline-block align-text-top">
-        </a>
-        <div class="position-absolute top-0 end-0">X</div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">about</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-disabled="true">side projects</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <main>
+  <main>
+    <!-- Descritpion -->
+    <div class="desc">
+      <div class="vertical-line"></div>
       <div class="center-text">
         <span>opportune</span>
         <span>Research</span>
         <span>Design&build</span>
         <span>launch</span>
         <span>test&learn</span>
-    </div>    
-    </main>
+        <div class="circle"></div>
+      </div>
+      <div class="vertical-line"></div>
+    </div>
+
+    <!-- resumer -->
+    <div class="resumer"></div>
     
+    <!-- cards -->
+    <section>
+      <div class="container max-w-5xl mx-auto px-8">
+        <div class="card-wraper">
+          <div class="background" id="background"></div>
+          <a href="javascript:void(0)" class="card relative group block p-2 h-full w-full">
+            <div class="card-main">
+              <div class="card-inner">
+                <div>
+                  <h3>Rose</h3>
+                  <p>A type of flowering shrub, its name comes from the Latin word Rosa. The rose has been
+                    a symbol of love, beauty, war, and
+                    politics. The rose plant can be erect shrubs, climbing, or trailing, with stems that
+                    are often armed with sharp
+                    prickles. Flowers vary in size and shape and are usually large and showy, in colors
+                    ranging from white through yellows
+                    and reds. Most species are native to Asia, with smaller numbers native to Europe,
+                    North America, and northwestern
+                    Africa.Roses are often grown as ornamental plants for their beautiful and sometimes
+                    fragrant flowers. They are popular garden
+                    plants but are sometimes grown indoors and are used as cut flowers.The rose species,
+                    China rose (Rosa chinensis), has been used in traditional Chinese medicine. The
+                    roots and fruits are
+                    used for arthritis, joint pains, coughs, and skin wounds and infections. The flower
+                    buds are used to stimulate blood
+                    flow and help with chest and abdominal pain.Rose water is commonly used in Middle
+                    Eastern and Indian cooking, especially in sweets such as baklava, nougat, and
+                    Turkish delight.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:void(0)" class="card relative group block p-2 h-full w-full">
+            <div class="card-main">
+              <div class="card-inner">
+                <div>
+                  <h3>Tulip</h3>
+                  <p>Tulips are spring-blooming perennials that grow from bulbs. Depending on the species,
+                    tulip plants can grow as short as
+                    4 inches (10 cm) or as high as 28 inches (71 cm). The tulip's large flowers usually
+                    bloom on scapes or subscapose stems
+                    that lack bracts. Most tulips produce only one flower per stem, but a few species
+                    bear multiple flowers on their scapes
+                    (e.g., Tulipa turkestanica). The showy, generally cup- or star-shaped tulip flower
+                    has three petals and three sepals,
+                    which are often termed tepals because they are nearly identical.Tulip bulbs are
+                    measured in centimeters around the "waist" of the bulb. Longfield Gardens supplies
+                    tulip bulbs that are
+                    at least 12cm in circumference. This ensures you will always get the biggest,
+                    brightest blooms.Tulip bulbs should be planted in mid to late fall, any time after
+                    the first frost and before the ground freezes. For
+                    best results, plant the bulbs within a month after you receive them.Plant tulip
+                    bulbs 6" to 8" deep and 4" to 5" apart on center. You may plant the bulbs
+                    individually, or can dig out a
+                    larger area and plant a number of bulbs at once. Position the bulbs with the pointy
+                    end up and then cover them with
+                    soil. Fall and winter rains usually provide adequate moisture. Water only if the
+                    weather is very dry.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:void(0)" class="card relative group block p-2 h-full w-full">
+            <div class="card-main">
+              <div class="card-inner">
+                <div>
+                  <h3>Sunflower</h3>
+                  <p>Sunflowers are known for being “happy” flowers, making them the perfect gift to bring
+                    joy to someone’s (or your) day.The common sunflower has a green erect stem covered
+                    in coarse hairs, growing on average around 2m tall. The leaves are
+                    broad, with serrated edges, and are alternately arranged on the stem. The ‘flower’
+                    of the common sunflower is actually a
+                    pseudanthium, or flowerhead, made up of many small flowers. The outer yellow
+                    ‘petals’ on the flowerhead are known as ray
+                    flowers and are made up of multiple petals fused together. Ray petals are usually
+                    yellow but can sometimes be red or
+                    orange. The black-brown flowers in the centre of the head, called disk flowers, grow
+                    in a spiral formation, and mature
+                    into sunflower seeds over time.Sunflower seeds are processed to create sunflower
+                    oil, a cooking oil that is both cheap to produce and high in
+                    unsaturated fats.Sunflower seeds are eaten both raw and roasted as a snack. They can
+                    also be processed to create sunflower butter, an
+                    alternative to peanut butter.Sunflower oil can be processed into margarine.Some
+                    Native American peoples use ground sunflower seeds to make bread-like products.Did
+                    you know? Sunflower petals are edible, but they aren't widely eaten due to their
+                    flavour.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:void(0)" class="card relative group block p-2 h-full w-full">
+            <div class="card-main">
+              <div class="card-inner">
+                <div>
+                  <h3>Daisy</h3>
+                  <p>Daisies are simple yet sophisticated and are some of the most beautiful flowers in
+                    the floral world.Daisy plants often grow to about 2 to 3 feet (61 to 91 centimeters)
+                    tall. The flowers grow on long stalks. Two types of
+                    flower make up each flower head. Ray flowers are what people call petals. The ray
+                    flowers may be long or short. Tiny
+                    disk flowers make up the center. The center may be flat or rounded. Depending on the
+                    type of daisy, the flower heads are
+                    from 1 to 4 inches (2.5 to 10 centimeters) wide.Oxeye and Shasta daisies have a ring
+                    of white ray flowers around a bright yellow center. The ray flowers of the English
+                    daisy may be white, purple, pink, or red.With its soft, pearly white petals
+                    radiating from a golden center, the Shasta daisy is a timeless classic. Not is it
+                    only one of the largest daisies, but it is also one of the easiest to grow and care
+                    for. Plus, you can enjoy its hearty
+                    blooms season after season.The sweet simplicity and genuine beauty of the daisy have
+                    made the flower an international emblem of innocence and
+                    purity. Its fresh, crisp appearance has come to symbolize new beginnings, and its
+                    bright, spirit-lifting colors are
+                    known to spread happiness like wildfire. It’s for these reasons that daisies make
+                    the perfect gifts and decorations for
+                    celebrating all of life’s biggest milestone events.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:void(0)" class="card relative group block p-2 h-full w-full">
+            <div class="card-main">
+              <div class="card-inner">
+                <div>
+                  <h3>Orchid</h3>
+                  <p>Orchids are delicate, exotic and graceful. They represent love, luxury, beauty and
+                    strength.Orchids are plants prized for their beautiful and unique flowers. Orchids
+                    make up one of the world’s largest plant
+                    families, with between 15,000 and 35,000 species, or types. Many people grow orchids
+                    as a hobby.
+                    Orchids grow in most parts of the world except for the areas near the North and
+                    South poles. Most orchids prefer warm,
+                    tropical areas. Orchids can grow in soil, completely underground, or on other plants
+                    or rocks. The species that grow on
+                    other plants or rocks do not have their roots in soil. Instead, their roots dangle
+                    in the air or cling to the plant or
+                    rock. They get moisture and nutrients from rainwater, rotting plant matter, or the
+                    air.
+                    Orchid plants can measure from less than an inch (2.5 centimeters) to more than 15
+                    feet (4.6 meters) tall. There can be
+                    a single flower or clusters. The flowers can be as small as 0.1 inch (2.5
+                    millimeters) or as large as 15 inches (38
+                    centimeters) across. They can be almost any color, and some have spots or streaks.
+                    Many have a strong fragrance, or
+                    smell, but some have no fragrance at all.
+                    The flavoring known as vanilla comes from the seedpods of some orchid plants. It is
+                    used in baked goods and beverages,
+                    and it is an ingredient in perfumes as well.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:void(0)" class="card relative group block p-2 h-full w-full">
+            <div class="card-main">
+              <div class="card-inner">
+                <div>
+                  <h3>Chrysanthemum</h3>
+                  <p>Chrysanthemum flowers come in a variety of sizes, ranging from 5 to 8 centimeters in
+                    diameter. Chrysanthemums are
+                    composite flowers that grow in varying petal arrangements, with some types having a
+                    daisy-like structure, others having
+                    a rounder, pompom-like appearance, and even some blooms with quill-like petals. The
+                    blossoms also have varying hues,
+                    from white and light yellow to deep burgundies and purples. Chrysanthemums have a
+                    sweet and floral scent with notes of
+                    menthol that clear the nasal passages. The flavor profile of Chrysanthemums may
+                    differ depending on the variety, but
+                    commonly the blossoms have bitter and floral nuances with sweet and peppery
+                    undertones.Chrysanthemum flower is the generalized term for thousands of commonly
+                    grown perennials, affectionately known as mums.
+                    These species of flowering plants are members of the daisy family and bloom in a
+                    vast array of colors and shapes. All
+                    mum flowers are edible, with the most common variety, pictured above, being Garland
+                    chrysanthemums, botanically
+                    classified as Chrysanthemum coronarium. This variety is also grown for its leafy
+                    greens and succulent stems, known as
+                    Shungiku in many Asian cultures. Garland chrysanthemums are one of the only
+                    varieties whose greens are edible. Other
+                    species of Chrysanthemum greens can cause contact dermatitis when handled without
+                    gloves and may result in digestive
+                    irritation when consumed. Chrysanthemum flowers produce a natural pesticide that
+                    helps with pest control in home gardens
+                    but is also toxic to household pests. Throughout history, Chrysanthemums have been a
+                    symbol of love, life, and rebirth.
+                    They are often gifted at baby showers and birthdays and are placed as offerings to
+                    the Goddess Lakshmi during Diwali
+                    Puja in Hindu culture. Mums are one of the most used edible flowers today, elevating
+                    the color, texture, dimension, and
+                    flavor of many different culinary creations.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
       
-    <!-- End Example Code -->
-  </body>
+  </main>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer" >
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/yassinbesbes/"><img src="images/icone/linkedin.png" alt="LinkedIn"></a>
+    <a href="https://twitter.com/Yassin__Besbes"><img src="images/icone/twitter.png" alt="Twitter"></a>
+    <a href="https://www.figma.com/@yassin_besbes"><img src="images/icone/figma(1).png" alt="Figma"></a>
+    <a href="https://github.com/Yassinbesbes"><img src="images/icone/github.png" alt="GitHub"></a>
+  </div>
+  <p class="copy">&copy; 2024 All rights reserved</p>
+</footer>
+  
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
