@@ -1,12 +1,18 @@
+/* Global settings */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     font-family: "Poppins", sans-serif;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.desc{
+
+/* Description section */
+.desc {
     margin-bottom: 100px;
 }
+
 .center-text {
     display: flex;
     flex-direction: column;
@@ -41,92 +47,82 @@
 }
 
 .center-text span:nth-child(5) {
-    color: var(--Solid-Teal---Dark,#084C61 );
-
+    color: var(--Solid-Teal---Dark, #084C61);
 }
+
 .vertical-line {
     width: 1px;
     height: 100px;
     background-color: black;
-    margin: 20px auto 20px;
+    margin: 20px auto;
 }
 
+/* Resume section */
+.resu {
+    margin-top: 0;
+}
 
-/*resumer description*/
-.resu{
-    margin-top:0px;
-}
-h2{
+h2 {
     text-align: left;
-    margin-left: 14%;
+    margin-left: 12%;
 }
-.resumer{
+
+.resumer {
     text-align: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 14%;
+    margin-left: 12%;
     margin-top: 2%;
 }
+
 .right-side {
     display: flex;
 }
 
-.first ,.seconde{
-    border-radius: 30px !important;
-    margin-left: 10px;
-
-}
-.first {
+.first, .seconde {
+    border-radius: 30px;
     width: 400px;
-    border:2px solid #9381FF;
     height: 300px;
+}
+
+.first {
+    border: 2px solid #9381FF;
     margin-right: 5px;
 }
 
 .seconde {
-    border:2px solid #FFD275;
-    width: 400px;
-    height: 300px;
+    border: 2px solid #FFD275;
     margin-top: 150px;
 }
 
-/* rect */
-.rect{
-  width: auto;
-  height: 250px;
-  background-color: #f4f2ff;
-  margin: 5px;
-  border-radius: 10px;
+/* Rectangle */
+.rect {
+    width: auto;
+    height: 250px;
+    background-color: #f4f2ff;
+    margin: 30px;
+    border-radius: 10px;
 }
 
-/*cards*/
-.one{
-  height:150px !important;
+/* Cards section */
+.cards {
+    margin-top: 20px;
 }
-.two{
-  height: 200px !important;
+.one, .two, .three, .four {
+    background-color: black;
+    height: 100px; 
+    margin-bottom: 10px; 
+    border-radius: 20px;
 }
-.three,.four{
-  height: 120% !important;
-}
-.one,.two,.three,.four{
-  background-color:  black;
-  height: 100px;
-  width: auto ;
-  margin: 5px;
-  border-radius: 20px;
+.one {
+    height: 28vh !important; 
 }
 
+.two {
+    height: 50vh !important; 
+}
 
-    
-
-
-
-
-
-
-
+.three, .four {
+    height: 80vh !important; 
+}
 
 
 
@@ -153,67 +149,67 @@ h2{
 
 
 
-/* footer */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
 footer {
-    background-color: #ffffff;
+    background-color: #f4f2ff; /* Adjust background color */
     padding: 20px;
     text-align: center;
-    display: end;
+    margin-top: 20px; /* Add margin to separate from content */
 }
 
-.social-icons {margin-bottom: 10px;}
-.social-icons a {margin: 0 10px;}
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
 
 .social-icons img {
-    width: 40px; /* Set width to your desired size */
-    height: 40px; /* Set height to your desired size */
+    width: 40px;
+    height: 40px;
+    border-radius: 0%; /* Optional: Make social icons round */
 }
 
 .copy {
     font-size: 14px;
     color: #000000;
+    margin-top: 10px; /* Add space between social icons and copyright text */
 }
 
-.plus{
-    color:#c3c3c3;
-    cursor: pointer;
-}
-.plus:hover{              
-    color: #142850;
-}
 
-.button-left,.button-right {
-    position: absolute;
-    top: 30%;
-    transform: translateY(-50%);
-    z-index: 1;
-}
-
-.button-left {left: 0;}
-.button-right {right: 0;}
-
-
-
-
-
-
+/* Responsive design */
 @media only screen and (max-width: 768px) {
-    .center-text{
+    .center-text {
         margin: 5px;
     }
+
     .center-text span {
-
         font-size: 40px;
-
     }
 
-    /* About */
-    .resu{
-      margin-bottom: 10px;
+    .resu {
+        margin-bottom: 10px;
     }
-    .resumer,h2{
-      margin-left: 6%;
-      text-align: center;
 
+    .resumer, h2 {
+        margin-left: 6%;
+        text-align: center;
+    }
+
+    .rect {
+        margin: 10px 0 0 0;
     }
 }
