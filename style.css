@@ -111,7 +111,42 @@ h2 {
     height: 100px; 
     margin-bottom: 10px; 
     border-radius: 20px;
+    position: relative;
 }
+/* arrow */
+.arrow{
+    position: absolute; /* Use fixed if you want it to be relative to the viewport */
+    bottom: 0;
+    right: 0;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+i.bi {
+    font-size: 24px; /* Adjust size as needed */
+    color: white; /* Adjust color as needed */
+}
+/* Animation for spinning icons */
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+  
+  .icon-spin {
+    animation: spin 0.5s ease-in-out infinite;
+  }
 .one {
     height: 28vh !important; 
 }
