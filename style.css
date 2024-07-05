@@ -107,7 +107,9 @@ h2 {
     margin-top: 20px;
 }
 .one, .two, .three, .four {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    
     height: 100px; 
     margin-bottom: 10px; 
     border-radius: 20px;
@@ -120,7 +122,7 @@ h2 {
     right: 0;
     width: 50px; /* Adjust size as needed */
     height: 50px; /* Adjust size as needed */
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 50%;
     margin: 20px;
     display: flex;
@@ -129,7 +131,7 @@ h2 {
 }
 i.bi {
     font-size: 24px; /* Adjust size as needed */
-    color: white; /* Adjust color as needed */
+    color: rgb(0, 0, 0); /* Adjust color as needed */
 }
 /* Animation for spinning icons */
 @keyframes spin {
