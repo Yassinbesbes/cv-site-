@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./style.css"
 function Description() {
   return (
     <div className="desc">
@@ -10,7 +10,6 @@ function Description() {
         <span>Design&build</span>
         <span>launch</span>
         <span>test&learn</span>
-        <div className="circle"></div>
       </div>
       <div className="vertical-line"></div>
     </div>

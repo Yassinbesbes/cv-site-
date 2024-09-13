@@ -4,6 +4,7 @@ import LinkedIn from "../images/icone/linkedin.png";
 import twitter from "../images/icone/twitter.png";
 import figma from "../images/icone/figma.png";
 import github from "../images/icone/github.png";
+import "./style.css";
 
 function Footer() {
   return (
