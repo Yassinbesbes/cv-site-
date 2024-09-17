@@ -21,7 +21,7 @@ function MyWork() {
       {Object.values(sections).map((section, index) => (
         <StyledRow key={index} reverse={index % 2 !== 0}>
           <StyledCol size={5} className="links-section">
-            <Image src={section.image} alt={`Project ${index + 1}`} />
+            <Image src={section.image} alt={`${index + 1}`} />
           </StyledCol>
           <StyledCol size={9} className="content-section">
             <ProjectTitle>{section.title}</ProjectTitle>

@@ -13,7 +13,7 @@ export const sections = {
     title: "Donations App",
     description:
       "Constructed a responsive website using HTML, CSS, JavaScript, and the Foundation framework for optimal user experience. Integrated intuitive donation forms and progress trackers to enhance user engagement and facilitate contributions. Created visually appealing interfaces and interactive elements to promote water donation awareness and support.",
-    techniques: ["HTML", "CSS", "JavaScript", "Foundation", "Bootstrap"],
+    techniques: ["HTML", "CSS", "JavaScript", "Foundation"],
   },
   project3: {
     image: SpeedConnection,
