@@ -17,9 +17,9 @@ export const StyledCol = styled.div`
   padding: 10px;
 
   &.links-section {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     @media screen and (max-width: 767px) {
       display: none; /* Hide on small screens */
     }

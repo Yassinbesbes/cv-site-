@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Image from "react-bootstrap/Image";
-import Logo from "../../images/Logo.png";
+import Logo from "../../images/logo/Logo.png";
 
 function Topbar() {
   return (
